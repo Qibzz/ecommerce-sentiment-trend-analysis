@@ -27,9 +27,8 @@ Di era e-commerce, ulasan pelanggan merupakan sumber data yang sangat berharga. 
 ## Fitur Utama
 
 - **Data Cleaning Pipeline**: Automasi penanganan data duplikat dan nilai kosong (null values).
-- **Trend Visualization**: Analisis korelasi harga vs kepuasan pelanggan dengan Seaborn.
+- **Trend Visualization & Insights**: Eksplorasi korelasi variabel menggunakan Python (Seaborn), dengan fokus pada penyajian data actionable yang kompatibel untuk integrasi ke platform BI seperti Tableau atau Apache Superset.
 - **Sentiment Engine**: Model klasifikasi teks dengan akurasi tinggi menggunakan pendekatan TF-IDF.
-2. Tambahkan Folder Structure
 
 ---
 
@@ -48,8 +47,8 @@ Di era e-commerce, ulasan pelanggan merupakan sumber data yang sangat berharga. 
 ## Struktur Proyek
 
 ```text
-├── data/           # Dataset simulasi/mentah
-├── notebooks/      # Google Colab / Jupyter Notebooks
-├── src/            # Script Python pendukung
-├── README.md       # Dokumentasi proyek
-└── .gitignore      # File yang diabaikan oleh Git
+├── data/           
+├── notebooks/      
+├── src/            
+├── README.md       
+└── .gitignore      
