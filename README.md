@@ -11,25 +11,47 @@ Proyek analisis sentimen dan tren pada data ulasan e-commerce, mencakup pipeline
 
 ## Latar Belakang
 
-Di era e-commerce, ulasan pelanggan merupakan sumber data yang sangat berharga. Proyek ini membangun pipeline end-to-end mulai dari pengumpulan dan pembersihan data, eksplorasi tren, hingga prediksi sentimen secara otomatis menggunakan Machine Learning.
+Di era e-commerce, ulasan pelanggan merupakan sumber data yang sangat berharga. Proyek ini menganalisis 2.500 review pengguna Shopee (Juli 2022 – April 2023) untuk memahami pola kepuasan pengguna, mengidentifikasi keluhan utama, dan memberikan rekomendasi berbasis data kepada tim produk.
 
 ---
 
-## Tujuan Proyek
+# 🛒 E-Commerce Sentiment & Trend Analysis
 
-- Membangun pipeline pembersihan data yang robust menggunakan Pandas
-- Menganalisis distribusi rating dan korelasi harga-rating per kategori
-- Melatih model klasifikasi sentimen berbasis TF-IDF + Naive Bayes
-- Menyajikan insight bisnis yang actionable dari data ulasan
+Proyek ini merupakan sistem analisis end-to-end yang mencakup Data Engineering, Data Analysis, dan AI Modeling untuk memahami feedback pengguna pada platform E-Commerce.
+
+## 📊 Dataset Specifications
+| Atribut | Detail |
+| :--- | :--- |
+| **Sumber Data** | Google Play Store — Shopee ID |
+| **Jumlah Data** | 2.500 reviews (balanced, 500/rating) |
+| **Periode** | Juli 2022 – April 2023 |
+| **Bahasa** | Bahasa Indonesia |
+| **Kolom Utama** | `content`, `score`, `at`, `replyContent`, `thumbsUpCount` |
+
+## 🛠️ Tools & Libraries
+| Tool / Library | Kegunaan |
+| :--- | :--- |
+| **Python 3.10+** | Bahasa pemrograman utama |
+| **Pandas & NumPy** | Data manipulation & cleaning |
+| **Matplotlib & Seaborn** | Visualisasi data & insight |
+| **WordCloud** | Visualisasi frekuensi kata pada ulasan |
+| **Google Colab** | Environment eksekusi notebook |
+| **Git & GitHub** | Version control dan portofolio |
+
+## 🚀 Project Steps
+1. **Data Engineering**: Handling missing values, cleaning text, dan structuring data.
+2. **Data Analysis**: Eksplorasi tren rating dan visualisasi distribusi sentimen.
+3. **AI Modeling**: Implementasi Natural Language Processing (NLP) untuk klasifikasi sentimen otomatis.
 
 ---
 
 ## Fitur Utama
 
-- **Data Cleaning Pipeline**: Automasi penanganan data duplikat dan nilai kosong (null values).
-- **Trend Visualization & Insights**: Eksplorasi korelasi variabel menggunakan Python (Seaborn), dengan fokus pada penyajian data actionable yang kompatibel untuk integrasi ke platform BI seperti Tableau atau Apache Superset.
-- **Sentiment Engine**: Model klasifikasi teks dengan akurasi tinggi menggunakan pendekatan TF-IDF.
-
+- **Data Cleaning Pipeline**: Penanganan missing values, anomali response time, dan feature engineering dari kolom datetime.
+- **EDA & Visualisasi**: Analisis distribusi rating, tren bulanan, word frequency, dan wordcloud menggunakan Matplotlib & Seaborn.
+- **Topic Categorization** : Kategorisasi keluhan pengguna ke dalam topik (Performa Aplikasi, Pengiriman, SPayLater, dll) menggunakan keyword matching.
+- **CS Response Analysis** : Analisis response rate dan median response time Customer Service per rating.
+- **Insight Bisnis** Rekomendasi actionable berdasarkan temuan data
 ---
 
 ## Cara Menjalankan
@@ -38,17 +60,20 @@ Di era e-commerce, ulasan pelanggan merupakan sumber data yang sangat berharga. 
 ```bash
    git clone https://github.com/Qibzz/ecommerce-sentiment-trend-analysis.git
 ```
-2. Buka `notebooks/ecommerce_analysis.ipynb` di Google Colab
-3. Jalankan semua cell secara berurutan
+2. Upload dataset ke environment: data/Shopee_Sampled_Reviews.csv
+3. Buka notebooks/ecommerce_analysis.ipynb di Google Colab
+4. Jalankan semua cell secara berurutan
 
 ---
 
 
 ## Struktur Proyek
 
-```text
-├── data/           
-├── notebooks/      
-├── src/            
-├── README.md       
-└── .gitignore      
+├── data/
+│   └── Shopee_Sampled_Reviews.csv   # Dataset review Shopee (2.500 rows)
+├── notebooks/
+│   └── ecommerce_analysis.ipynb     # Notebook utama EDA
+├── outputs/                         # Hasil visualisasi (PNG)
+├── src/                             # Script pendukung (coming soon)
+├── README.md
+└── .gitignore     
