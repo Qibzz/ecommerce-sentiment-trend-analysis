@@ -6,9 +6,9 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 Proyek analisis sentimen dan tren pada data ulasan e-commerce, mencakup pipeline Data Engineering, Exploratory Data Analysis, dan model Machine Learning untuk klasifikasi sentimen.
-## 📊 Live Dashboard
-🔗 [Lihat Dashboard Interaktif](https://datastudio.google.com/reporting/4c658025-1ad7-492f-85eb-09e81bc37f73)
-
+## 📊 Dashboard
+- **Tableau Public**: [Shopee Review Sentiment Analysis](https://public.tableau.com/app/profile/queen.qiblattul.q/viz/Portofolio1_17773496902750/DashboardAnalysis)
+- **Looker Studio**: [Dashboard](https://datastudio.google.com/reporting/4c658025-1ad7-492f-85eb-09e81bc37f73)
 ---
 
 ## Latar Belakang
